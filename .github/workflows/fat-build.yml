@@ -2,6 +2,9 @@ name: Fat JAR Build
 
 on:
   workflow_call:
+  push:
+    paths-ignore:
+      - "**.md"
 
 jobs:
   build-and-test:
